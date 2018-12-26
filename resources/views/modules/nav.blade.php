@@ -1,9 +1,9 @@
 <nav>
     <ul class="nav justify-content-center">
         @foreach(config('app.nav'.Auth::check()) as $link => $label)
-            <li class="nav-item"><a class="nav-link active"
-                                    href='{{ $link }}'
-                                    class='{{ Request::is(substr($link, 1)) ? 'active' : '' }}'>{{ $label }}</a>
+            <li class="nav-item"><a
+                        href='{{ $link }}'
+                        class='nav-link active {{ Request::is(substr($link, 1)) ? 'active' : '' }}'>{{ $label }}</a>
         @endforeach
 
         @if(Auth::check())
