@@ -31,7 +31,10 @@ Route::get('/debug', function () {
 /*
  * Home
  */
-Route::get('/', 'WelcomeController');
+//Route::get('/', 'MessageController@index');
+
+
+Route::get('/', 'WelcomeController@index');
 
 /*
  * Show All Testimonials
@@ -91,7 +94,3 @@ Route::get('/about', 'MessageController@about');
 
 
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

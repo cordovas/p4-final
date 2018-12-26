@@ -9,6 +9,13 @@ use App\Tag;
 class MessageController extends Controller
 {
 
+    public function home()
+    {
+//        return view('welcome');
+        return view('welcome');
+
+    }
+
     public function store(Request $request)
     {
         $request->validate([
