@@ -16,9 +16,9 @@
                 {{method_field('delete') }}
                 {{ csrf_field() }}
                 <input type='submit' class="btn btn-secondary btn-sm " Value='Delete'>
-                <a href='/messages/{{ $message->id }}/edit'>
-                    <button type="button" class="btn btn-primary btn-sm">Edit</button>
-                </a>
+
+                    <button type="button" class="btn btn-primary btn-sm"><a href='/messages/{{ $message->id }}/edit'>Edit</a></button>
+                
             </form>
         </div>
     </div>
