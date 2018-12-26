@@ -17,7 +17,7 @@
                 {{ csrf_field() }}
                 <input type='submit' class="btn btn-secondary btn-sm " Value='Delete'>
 
-                    <button type="button" class="btn btn-primary btn-sm"><a class='alinks' href='/messages/{{ $message->id }}/edit'>Edit</a></button>
+                <a class='alinks' href='/messages/{{ $message->id }}/edit'><button type="button" class="btn btn-primary btn-sm">Edit</button></a>
 
             </form>
         </div>
