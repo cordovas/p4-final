@@ -108,5 +108,5 @@ html {
 }
 
 .alinks {
-    color: white;
+    display: inline-block;
 }
