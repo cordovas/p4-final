@@ -92,5 +92,3 @@ Route::get('/show-login-status', function () {
  */
 Route::get('/about', 'MessageController@about');
 
-
-
